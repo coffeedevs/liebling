@@ -83,6 +83,15 @@ into the {body} of the default.hbs template --}}
             </div>
           </div>
         </div>
+          <section
+                  style="display: flex; align-items: center; justify-content: center; margin: 0 0 40px 0; flex-direction:column;">
+              <p style="width: 100%; text-align: center; font-size: 1.25rem; padding: 1rem;">
+                  ¡No dejes que nos quedemos dormidos 😴, invitanos un cafecito!
+              </p>
+              <a href='https://cafecito.app/coffeedevs' rel='noopener' target='_blank'><img
+                      srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x'
+                      src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Invitame un café en cafecito.app' /></a>
+          </section>
         {{!-- Email subscribe form at the bottom of the page --}}
         <section class="m-subscribe-section js-newsletter">
           <div class="l-wrapper in-post">
@@ -149,7 +158,6 @@ into the {body} of the default.hbs template --}}
           </div>
         </section>
         {{!-- If you want to embed comments, this is a good place to do it! --}}
-        {{!--
           <section class="m-comments">
             <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
               <div id="disqus_thread"></div>
@@ -160,14 +168,13 @@ into the {body} of the default.hbs template --}}
                 };
                 (function () {
                   var d = document, s = d.createElement('script');
-                  s.src = 'https://CHANGETHIS.disqus.com/embed.js';
+                    s.src = 'https://cafedepormedio.disqus.com/embed.js';
                   s.setAttribute('data-timestamp', +new Date());
                   (d.head || d.body).appendChild(s);
                 })();
               </script>
             </div>
           </section>
-        --}}
       {{/post}}
       {{!-- Related posts --}}
       {{#if post.tags.length}}
